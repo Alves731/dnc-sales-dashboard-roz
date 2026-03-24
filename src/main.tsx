@@ -1,17 +1,15 @@
-import { StrictMode } from 'react'
-import { ThemeProvider } from 'styled-components'
-import { createRoot } from 'react-dom/client'
+import React from "react"
+import { ThemeProvider } from "styled-components"
+import ReactDOM from "react-dom/client"
 import App from './App.tsx'
-import { GlobalStyle} from '@styles/globalStyle.ts'
-import { lighTheme} from '@styles/theme.ts'
+import { GlobalStyle, lighTheme } from './styles/'
 
 
-
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
     <ThemeProvider theme={lighTheme}>
       <GlobalStyle />
       <App />
     </ThemeProvider>
-  </StrictMode>,
+  </React.StrictMode>
 )
