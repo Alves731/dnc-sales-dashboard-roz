@@ -1,5 +1,5 @@
-import { type Theme } from "@types";
-import 'styled-components';
+import type { Theme } from "@types"
+import 'styled-components'
 
 export const lighTheme: Theme = {
     appBackground: '#fff',
@@ -38,7 +38,7 @@ export const lighTheme: Theme = {
         error: '#FF0202',
         subtitle: '#666',
         success: '#008000',
-    }
+    },
 }
 
 export const darkTheme: Theme = {
