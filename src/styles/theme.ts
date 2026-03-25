@@ -1,4 +1,4 @@
-import type { Theme } from "@types"
+import type { Theme } from "@/types"
 import 'styled-components'
 
 export const lighTheme: Theme = {
