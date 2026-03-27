@@ -1,0 +1,49 @@
+import styled from 'styled-components'
+import type { ButtonProps } from '../types'
+import { pxTORem } from '@/utils'
+
+export const StyledButton = styled.button<ButtonProps>`
+  border-radius: ${pxTORem(8)};
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: ${pxTORem(16)};
+  font-weight: bold;
+  height: ${pxTORem(50)};
+  padding: 0 ${pxTORem(16)};
+  transition: background-color 0.3s;
+  width: 100%;
+
+  &.primary {
+    background-color: ${(props) => props.theme.buttons.primary};
+    color: ${(props) => props.theme.buttons.primaryColor};
+    &:hover {
+      background-color: ${(props) => props.theme.buttons.primaryHover};
+    }
+  }
+  &.alert {
+    background-color: ${(props) => props.theme.buttons.alert};
+    color: ${(props) => props.theme.buttons.alertColor};
+    &:hover {
+      background-color: ${(props) => props.theme.buttons.alertHover};
+    }
+  }
+  &.borderless-alert {
+    background-color: none;
+    color: ${(props) => props.theme.buttons.alert};
+    height: 0;
+    padding: 0;
+    &:hover {
+      color: ${(props) => props.theme.buttons.alertHover};
+    }
+  }
+  &:disabled {
+    background-color: ${(props) => props.theme.buttons.disabled};
+    color: ${(props) => props.theme.buttons.disabledColor};
+    cursor: not-allowed;
+    &:hover {
+    background-color: ${(props) => props.theme.buttons.disabled};
+    color: ${(props) => props.theme.buttons.disabledColor};
+    }
+  }
+`

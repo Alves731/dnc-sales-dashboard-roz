@@ -1,3 +1,3 @@
-
-export * from './theme'
-export * from './theme.ts'
+export * from './theme.d'
+export * from './formComponent.d'
+export * from './typographies.d'
