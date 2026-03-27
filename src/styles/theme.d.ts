@@ -1,14 +1,11 @@
 import 'styled-components'
-import {Theme} from './theme.d'
 
-
-
-
-export type Theme = {
+declare module 'styled-components' {
+export interface DefaultTheme {
     appBackground: string;
     appColor: string;
     appDefaultStroke: string;
-    appLogo: string;
+    appLogo: string,
     appSkeletonFrom: string;
     appSkeletonTo: string;
     buttons: {
@@ -20,14 +17,14 @@ export type Theme = {
         primary: string;
         primaryColor: string;
         primaryHover: string;
-    };
+    },
     card: {
         alert: string;
         background: string;
         border: string;
         success: string;
         warning: string;
-    };
+    },
     textInput: {
         active: string;
         activeColor: string;
@@ -36,11 +33,11 @@ export type Theme = {
         disabledBorderColor: string;
         disabledColor: string;
         placeholderColor: string;
-    };
+    },
     typographies: {
         error: string;
         subtitle: string;
         success: string;
-    };
-};
-
+    },
+}
+}

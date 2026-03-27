@@ -1,7 +1,7 @@
-import type { Theme } from "@/types"
+import type {Theme} from '@/types'
 import 'styled-components'
 
-export const lighTheme: Theme = {
+export const lightTheme: Theme = {
     appBackground: '#fff',
     appColor: '#000',
     appDefaultStroke: '#E0E0E0',
@@ -79,4 +79,8 @@ export const darkTheme: Theme = {
         subtitle: '#89A7CE',
         success: '#008000',
     },
+}
+
+declare module 'styled-components' {
+    export interface DefaultTheme extends Theme {}
 }
