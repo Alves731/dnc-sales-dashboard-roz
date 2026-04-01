@@ -1,6 +1,8 @@
 import styled from 'styled-components'
-import type { InputProps } from '../types'
+import type { InputProps } from '@/types'
 import { pxTORem } from '@/utils'
+
+
 
 export const StyledInput = styled.input<InputProps>`
 background-color: ${(props) => props.theme.textInput.active};

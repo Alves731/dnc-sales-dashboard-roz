@@ -81,3 +81,6 @@ export const darkTheme: Theme = {
         success: '#008000',
     },
 }
+ 
+
+export type DefaultTheme = Theme
