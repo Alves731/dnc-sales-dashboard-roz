@@ -1,9 +1,9 @@
 import { createGlobalStyle } from 'styled-components'
-import { type DefaultTheme } from 'styled-components'
+import type { Theme } from '../types/typetheme'
 
 
 
-export const GlobalStyle = createGlobalStyle<{ theme?: DefaultTheme}>`
+export const GlobalStyle = createGlobalStyle<{ theme?: Theme}>`
     body, html {
         background: ${(props) => props.theme.appBackground};
         color: ${(props) => props.theme.appColor};

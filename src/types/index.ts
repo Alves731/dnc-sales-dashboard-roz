@@ -1,3 +1,5 @@
-export * from './theme.d'
-export * from './formComponent.d'
-export * from './typographies.d'
+export * from './avatarList';
+export * from './typetheme';
+export * from './formComponent';
+export * from './typographies';
+
