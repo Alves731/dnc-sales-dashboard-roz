@@ -1,5 +1,6 @@
-import type {Theme} from '@/types'
+import type { Theme } from '../types/typetheme'
 import 'styled-components'
+
 
 export const lightTheme: Theme = {
     appBackground: '#fff',
@@ -80,7 +81,6 @@ export const darkTheme: Theme = {
         success: '#008000',
     },
 }
+ 
 
-declare module 'styled-components' {
-    export interface DefaultTheme extends Theme {}
-}
+export type DefaultTheme = Theme
